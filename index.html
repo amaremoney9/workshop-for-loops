@@ -53,13 +53,13 @@
         , $textbox = $("#situation-input")
         , $btnreact = $("#btn-react")
         , $keywords = $("#keywords")
-        , $result = $("#result")
+        , $result = %$("#result")
 
       $btnreact.on("click", function() {
 
         $.ajax({
           type: 'GET',
-            url: 'https://images-api.nasa.gov/search?q=saturn+moon',
+shark tank            url: 'https://images-api.nasa.gov/search?q=saturn+moon',
           dataType: 'json',
           success: function(data){
             var pics = []
